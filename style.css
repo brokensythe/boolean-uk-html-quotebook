@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* CONTAINERS */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template:
+    "header " 80px
+    "article " auto /
+    auto;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  align-items: center;
+  background-color: rgb(131, 34, 25);
+  color: #fff;
+}
+
+.article {
+  grid-area: article;
+  display: grid;
+  background-color: #fff;
+  padding: 40px 170px;
+  grid-template:
+    "athlete-quotes " 1fr
+    "actor-quotes " 1fr
+    "intellectual-quotes " 1fr /
+    auto;
+
+  grid-gap: 10px;
+  font: 1em Helvetica, Arial, sans-serif;
+}
+
+/* ARTICLE GRID AREAS */
+.athlete-quotes {
+  grid-area: athlete-quotes;
+}
+
+.actor-quotes {
+  grid-area: actor-quotes;
+}
+
+.intellectual-quotes {
+  grid-area: intellectual-quotes;
+}
+
+h2 {
+  margin-bottom: 20px;
+  padding-right: 750px;
+}
+
+.michael-jordan strong,
+.michael-phelps strong,
+.abby-wambach strong,
+.juliette-binoche strong,
+.elizabeth-taylor strong,
+.morgan-freeman strong,
+.chimanda-ngozi-adichie strong,
+.benazir-bhutto strong,
+.hubert-horatio-humphrey strong {
+  padding-left: 450px;
+  font: bold 1em "Times New Roman", Times, serif;
+}
+
+.michael-jordan,
+.michael-phelps,
+.abby-wambach,
+.juliette-binoche,
+.elizabeth-taylor,
+.morgan-freeman,
+.chimanda-ngozi-adichie,
+.benazir-bhutto,
+.hubert-horatio-humphrey {
+  display: grid;
+  place-items: center;
+  height: 80px;
+  width: 700px;
+  border-radius: 2px;
+}
+
+.athlete-quotes,
+.actor-quotes,
+.intellectual-quotes {
+  display: grid;
+  place-items: center;
+  grid-gap: 15px;
+  margin-bottom: 25px;
+}
+
+.michael-jordan p,
+.michael-phelps p,
+.abby-wambach p,
+.juliette-binoche p,
+.elizabeth-taylor p,
+.morgan-freeman p,
+.chimanda-ngozi-adichie p,
+.benazir-bhutto p,
+.hubert-horatio-humphrey p {
+  font-style: italic;
+  text-align: center;
+}
+
+.athlete-quotes div {
+  background-color: rgba(107, 182, 107, 0.581);
+}
+
+.actor-quotes div {
+  background-color: rgba(128, 174, 227, 0.581);
+}
+
+.intellectual-quotes div {
+  background-color: rgba(205, 205, 46, 0.581);
+}
